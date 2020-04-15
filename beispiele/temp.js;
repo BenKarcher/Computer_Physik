@@ -1,0 +1,11 @@
+var div=document.createElement("div");
+var slider=document.createElement("input");
+slider.type="input";
+slider.style.width="100%";
+slider.min=0;
+slider.max=5;
+slider.step=0.1;
+var output=document.createElement("a");
+div.appendChild(slider);
+div.appendChild(output);
+document.body.appendChild(div);
