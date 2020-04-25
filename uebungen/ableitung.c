@@ -38,6 +38,18 @@ int factorial(int x){
     return x?x*factorial(x-1):1;
 }
 
+int factorial2(int x){
+	if (x != 0) {
+		int product = 1;
+		for(int i=x, i>=1, i--) {
+			product *= i;
+		}
+		return product;
+	} else {
+		return 1;
+	}
+}
+
 int choose(int n, int k){
     return k>n?0:factorial(n)/(factorial(k)*factorial(n-k));
 }
