@@ -5,6 +5,7 @@
 double ableitung(double (*f)(double),double x, double h);
 double n_ableitung(int n, double (*f)(double),double x, double h);
 int factorial(int x);
+int factorial2(int x);
 int choose(int n, int k);
 
 /* Funktion "main" wird bei Start des Programms ausgefuehrt */ 
@@ -13,7 +14,7 @@ int main()   /* int definiert den Datentyp der Groesse,
 {            /* geschweifte Klammern begrenzen Programmbloecke
                 hier werden alle Anweisungen der Funktion 
                 eingefasst */   
-  
+  printf("4!= %d \n",factorial2(4));
   printf("x= %2.5lf \n",n_ableitung(2,sin,2,0.00001));
   
   return 0;                       /* Rueckgabe einer 0 an die aufrufende 
@@ -41,7 +42,7 @@ int factorial(int x){
 int factorial2(int x){
 	if (x != 0) {
 		int product = 1;
-		for(int i=x, i>=1, i--) {
+		for(int i=x; i>=1; i--) {
 			product *= i;
 		}
 		return product;
