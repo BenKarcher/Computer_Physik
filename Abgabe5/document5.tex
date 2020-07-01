@@ -76,6 +76,7 @@ u^{[N]}(0,x) = \frac{-N (N+1)}{\cosh^2(x)}
 sei ein möglicher Anfangszustand für N Solitonen, die sich mit verschiedenen Geschwindigkeiten fortpflanzen. Eine spezielle Lösung der KdV-Gleichung lautet:
 \begin{align}
 u_{[1]}(t,x) = \frac{-2}{\cosh^2(x-4t)}
+\label{Formel:spezielleLösung}
 \end{align} mit der konstanten Geschwindigkeit $v=4$. \\
 Eine kompliziertere Lösung der Gleichung \ref{Formel:KdV-Problem} mit der Anfangsbedingung \ref{Formel:Anfangsbedingung} lautet z.B. für $N=2$:
 \begin{align}
@@ -97,8 +98,25 @@ u(t,x) \frac{\partial}{\partial x}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_{j+1}^n
 \frac{u_j^1 - u_j^0}{d} &= 6u_j^0 \frac{u_{j+1}^0 - u_{j-1}^0}{2h} - \frac{u_{j+2}^0 - 2u_{j+1}^0 + 2u_{j-1}^0 - u_{j-2}^0}{2h^3}
 \label{Formeln:Diskretisierung}
 \end{align}
-Mit diesen Diskretisierungen (4-\ref{Formeln:Diskretisierung}) kann man die Gleichung \ref{Formel:KdV-Problem} mit dem Anfangszustand \ref{Formel:Anfangsbedingung} für $N=1,2$ numerisch lösen. Wir nehmen an, dass die Auslenkung $u(t,x)$ an den Rändern verschwindend klein ist, da wir eine große Breite des Wasserkanals annehmen und somit das räumliche Integral groß genug ist. Somit gilt $u=0$. Unser Programm ist im Anhang "" zu finden. \\
+Mit diesen Diskretisierungen (5-\ref{Formeln:Diskretisierung}) kann man die Gleichung \ref{Formel:KdV-Problem} mit dem Anfangszustand \ref{Formel:Anfangsbedingung} für $N=1,2$ numerisch lösen. Wir nehmen an, dass die Auslenkung $u(t,x)$ an den Rändern verschwindend klein ist, da wir eine große Breite des Wasserkanals annehmen und somit das räumliche Integral groß genug ist. Somit gilt $u=0$. Unser Programm ist im Anhang "" zu finden. \\
 % Name des Progrmms
-Weiter vergleichen wir unsere erhaltene Lösung mit $t=0.1$ graphisch mit der analytischen Lösung $u^{[1]}$. 
-% 
+Weiterhin vergleichen wir unsere erhaltene Lösung graphisch mit $t=0.1$ mit der analytischen Lösung $u^{[1]}$ aus der Gleichung \ref{Formel:spezielleLösung} bzw. mit der Lösung $u^{[2]}$ aus Gleichung \ref{Formel:LösungFürNgleich2}  
+% Graph der analytischen Lösung mit t=0.1
+Hierbei fällt uns auf, dass...
+%Vergleich
+Nun gibt es jedoch ein Hindernis. Die Stabilität des Verfahrens ist nur für die Werte $d \lesssim \frac{1}{2.6}h^3$ gewährleistet. Deshalb werden wir diese Bedingung numerisch überprüfen. Dabei betrachten wir für die Werte der Ortsschrittweite $h=0.05, 0.1, 0.2, 0.4$. 
+%Was sehen wir? Für welche h ist die Bedingung erfüllt?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lösung für 3 Solitonen}
+Jetzt stellen wir $u^{[3]}(t,x)$ graphisch dar, wobei wir die folgenden Randbedingungen machen: $t \in [0;1]$ und $x \in [-5;45]$.
+Man sieht, dass...
+% Kommentar zu dem Plot
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Lösungen für nicht ganzzahlige Solitonen}
+Zum Schluss interessiert uns natürlich noch, wie sich die KdV-Gleichung für nicht ganzzahlige Solitonen verhält. In der Praxis können wir diesen Fall selbstverständlich nicht realisieren, da nur ganzzahlige Wasserwellen existieren können. 
+% oder bedeutet nicht ganzzahlig, dass die Wasserwellen aus einem Winkel auf die Wand treffen, also nicht senkrecht?
+Die Lösung für $N=1.1,1.2,...,1.9$ 
+% Text
 \end{document}
