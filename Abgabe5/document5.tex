@@ -58,8 +58,47 @@
 \begin{document}
 \thispagestyle{fancy}
 \section*{H.10: Solitonlösungen der KORTEWEG-DE VRIES-Gleichung}
-Nehmen wir an, wir hätten einen Wasserkanal, der wenig tief, aber sehr breit sei. Im Folgenden beschreibt die KORTEWEG-DE VRIES-(KCV)-Gleichung $\frac{\partial}{\partial t}u(t,x)$ die Abweichung $u(t,x)$ der Wasserwellen vom mittleren Wasserpegel. 
+Nehmen wir an, wir hätten einen Flachwasserkanal, der wenig tief, aber sehr breit sei. Im Folgenden beschreibt die KORTEWEG-DE VRIES-Gleichung $\frac{\partial}{\partial t}u(t,x)$ die Abweichung $u(t,x)$ der Wasserwellen vom mittleren Wasserpegel. 
 \begin{align}
 \frac{\partial}{\partial t}u(t,x) = 6 \cdot u(t,x) \frac{\partial}{\partial x}u(t,x) - \frac{\partial^3}{\partial x^3} u(t,x)
+\label{Formel:KdV-Problem}
 \end{align}
+Dabei betrachten wir nur die zeitliche Auslenkung in eine Koordinatenrichtung entlang der Kanalachse, hier jetzt mit x bezeichnet. \newline
+Die Korteweg-de-Vries-Gleichung ist eine nichtlineare partielle Differentialgleichung dritter Ordnung. \newline
+Die Lösungen für diese Differentialgleichung nennt man Solitonen. Dies sind Wellenpakete, die sich ohne Änderung seiner Form durch ein dispersives und gleichzeitig auch durch ein nichtlineares Medium bewegen. Die Wellenpakete können untereinander nicht wechselwirken, außer es wird Energie ausgetauscht. Dann handelt es sich um eine solitäre Welle. \newline Man nimmt an, dass ein Wellenpaket aus mehreren harmonischen Frequenzen besteht, die nach Fourier zusammen eine Welle bilden. Die Wellenpakete können sich aufgrund von Dispersion mit unterschiedlichen Geschwindigkeiten fortpflanzen und verformen somit die Ausgangswelle. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Geschwindigkeiten der Solitonen}
+Nehmen wir an 
+\begin{align}
+u^{[N]}(0,x) = \frac{-N (N+1)}{\cosh^2(x)}
+\label{Formel:Anfangsbedingung}
+\end{align}
+sei ein möglicher Anfangszustand für N Solitonen, die sich mit verschiedenen Geschwindigkeiten fortpflanzen. Eine spezielle Lösung der KdV-Gleichung lautet:
+\begin{align}
+u_{[1]}(t,x) = \frac{-2}{\cosh^2(x-4t)}
+\end{align} mit der konstanten Geschwindigkeit $v=4$. \\
+Eine kompliziertere Lösung der Gleichung \ref{Formel:KdV-Problem} mit der Anfangsbedingung \ref{Formel:Anfangsbedingung} lautet z.B. für $N=2$:
+\begin{align}
+	u^{[2]}(t,x) = -12 \frac{3 + 4 \cdot \cosh(2x-8t) + \cosh(4x-64t)}{[3 \cdot \cosh(x-28t) + \cosh(3x-26t)]^2}
+	\label{Formel:LösungFürNgleich2}
+\end{align}
+Im folgenden werden wir die Lösungen dieser Gleichung für verschiedene Zeiten $t \in [-1;1]$ graphisch darstellen. 
+
+% Plots und Geschwindigkeiten der beiden Solitonen ablesen
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lösung der Gleichung \ref{Formel:KdV-Problem} mit der Anfangsbedingung \ref{Formel:Anfangsbedingung} unter Diskretisierung}
+% evtl andere Überschrift wählen
+Wenn man annimmt, dass die Zeitdiskretisierung $t_n = n \cdot d$ mit der Zeitschrittweite $d$ genähert werden kann und die Ortsdiskretisierung $h_j = j \cdot h$ mit der Schrittweite $h$ ausgedrückt werden kann, so lassen sich die einzelnen Teile der partiellen Differentialgleichung schreiben als:
+\begin{align}
+\frac{\partial}{\partial t}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_j^{n+1}-n_j^{n-1}}{2d} + \mathcal O(d^2) \\
+u(t,x) \frac{\partial}{\partial x}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_{j+1}^n + u_j^n + u_{j-1}^n}{3} \frac{u_{j+1}^n - u_{j-1}^n}{2h} + \mathcal O(h^2) \\
+\frac{\partial^3}{\partial x^3}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_{j+2}^n - 2 u_{j+1}^n + 2 u_{j-1}^n - u_{j-2}^n}{2h^3} + \mathcal O(h^2) \\
+\frac{u_j^1 - u_j^0}{d} &= 6u_j^0 \frac{u_{j+1}^0 - u_{j-1}^0}{2h} - \frac{u_{j+2}^0 - 2u_{j+1}^0 + 2u_{j-1}^0 - u_{j-2}^0}{2h^3}
+\label{Formeln:Diskretisierung}
+\end{align}
+Mit diesen Diskretisierungen (4-\ref{Formeln:Diskretisierung}) kann man die Gleichung \ref{Formel:KdV-Problem} mit dem Anfangszustand \ref{Formel:Anfangsbedingung} für $N=1,2$ numerisch lösen. Wir nehmen an, dass die Auslenkung $u(t,x)$ an den Rändern verschwindend klein ist, da wir eine große Breite des Wasserkanals annehmen und somit das räumliche Integral groß genug ist. Somit gilt $u=0$. Unser Programm ist im Anhang "" zu finden. \\
+% Name des Progrmms
+Weiter vergleichen wir unsere erhaltene Lösung mit $t=0.1$ graphisch mit der analytischen Lösung $u^{[1]}$. 
+% 
 \end{document}
