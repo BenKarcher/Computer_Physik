@@ -71,35 +71,35 @@
 	
 \section{Solitonlösungen der \textsc{Korteweg-de Vries}-Gleichung}
 
-\textit{In diesem pdf-Dokument sind Videos eingebunden, diese werden von \emph{okular} angezeigt. Sollte ihnen diese nicht angezeigt werden, haben wir die .mp4-Dateien auch nochmal separat angefügt.}
+\textit{In diesem pdf-Dokument sind Videos eingebunden, diese werden von \emph{okular} angezeigt. Sollte Ihnen diese nicht angezeigt werden, haben wir die .mp4-Dateien auch nochmal separat angefügt.}
 
-In dieser Aufgabe untersuchen wir L\"ossungen der Korteweg-de Vries-Gleichung.
-Diese gelichung beschreibt die Ausbreitung von Wellen in Kan\"alen.
+In dieser Aufgabe untersuchen wir Lösungen der Korteweg-de Vries-Gleichung.
+Diese Gleichung beschreibt die Ausbreitung von Wellen in Kanälen.
 
 \begin{equation*}
 \frac{\partial}{\partial t} u(t, x)=6 u(t, x) \frac{\partial}{\partial x} u(t, x)-\frac{\partial^{3}}{\partial x^{3}} u(t, x)
 \end{equation*}
 
-Eine besonderer Satz L\"ossung sind die Solitonen.
-Diese beschreiben einzelne Wellen die sich mit konstanter geschwindigkeit bewegen ohne zu zerfliesen.
-Die anfangs bedingung:
+Ein besonderer Satz Lösungen sind die Solitonen.
+Diese beschreiben einzelne Wellen, die sich mit konstanter Geschwindigkeit bewegen, ohne zu zerfließen.
+Die Anfangsbedingung:
 
 \begin{align}
 	u^{[N]}(0,x)=\frac{-N(N+1)}{cosh^2(x)}
 \end{align}
 
-erzeugt N Solitonen die sich mit verschiedenen Geschwindigkeit ausbreiten.
+erzeugt N Solitonen, die sich mit verschiedenen Geschwindigkeiten ausbreiten.
 \subsection{}
 
-Zunächst betrachten wir die Analytische Lösung zu $u^{[2]}$:
+Zunächst betrachten wir die analytische Lösung zu $u^{[2]}$:
 \begin{equation*}
 u^{[2]}(t, x)=-12 \frac{3+4 \cosh (2 x-8 t)+\cosh (4 x-64 t)}{\{3 \cosh (x-28 t)+\cosh (3 x-36 t)\}^{2}}
 \end{equation*}
 
 im Bereich $t\in[-1,1]$. 
-In Video \ref{vid:H10.1} sieht mann das 2 Solitonen erzeugt werden.
-Um die geschwindigkeit der Solitonen zu bestimmen kann mann die Position bei $t=1$ ablessen
-da beide Solitonen bei $t=0$ bei $x=0$ anfingen. Dabei ergibt sich:
+In Video \ref{vid:H10.1} sieht man, dass zwei Solitonen erzeugt werden.
+Um die Geschwindigkeit der Solitonen zu bestimmen, kann man die Position bei $t=1$ ablesen,
+da beide Solitonen zur Zeit $t=0$ am Ort $x=0$ anfingen. Dabei ergibt sich:
 \begin{align*}
 	v_1&=3.45\\
 	v_2&=16.27
@@ -117,14 +117,14 @@ da beide Solitonen bei $t=0$ bei $x=0$ anfingen. Dabei ergibt sich:
 		&scaleMode=letterbox % preserve aspect ratio
 	}
 	]{}{VPlayer9.swf}
-	\caption[2 Solitonen]{Hier ist $u^{[2]}(x)$ im Bereich von $t\in[-1,1]$ dargestellt.}
+	\caption[2 Solitonen]{Darstellung von $u^{[2]}(x)$ im Bereich von $t\in[-1,1]$}
 	\label{vid:H10.1}
 \end{figure}
 \subsection{}
-Nun L\"ossen wir $u^{[N]}$ numerisch.
-Datzu nutzen wir die Zeitdiskretisierung $t_n = n \cdot d$ mit der Zeitschrittweite $d$
+Nun lösen wir $u^{[N]}$ numerisch.
+Dazu nutzen wir die Zeitdiskretisierung $t_n = n \cdot d$ mit der Zeitschrittweite $d$
 und die Ortsdiskretisierung $h_j = j \cdot h$ mit der Schrittweite $h$.
-Mit der notation: $u_j^n=u(t_n,x_j)$ lassen sich die einzelnen Teile der partiellen Differentialgleichung schreiben als:
+Mit der Notation: $u_j^n=u(t_n,x_j)$ lassen sich die einzelnen Teile der partiellen Differentialgleichung schreiben als:
 \begin{align*}
 	\frac{\partial}{\partial t}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_j^{n+1}-n_j^{n-1}}{2d} + \mathcal O(d^2) \\
 	u(t,x) \frac{\partial}{\partial x}u(t,x) \bigg|_{t=t_n, x=x_j} &=\frac{u_{j+1}^n + u_j^n + u_{j-1}^n}{3} \frac{u_{j+1}^n - u_{j-1}^n}{2h} + \mathcal O(h^2) \\
@@ -133,44 +133,44 @@ Mit der notation: $u_j^n=u(t_n,x_j)$ lassen sich die einzelnen Teile der partiel
 	\Rightarrow u_j^{n+1} &= 2d\left(6u_j^n \frac{u_{j+1}^n - u_{j-1}^n}{2h} - \frac{u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n}{2h^3}\right)+u_j^{n-1}\\
 	\label{Formeln:Diskretisierung}
 \end{align*}
-Mit anfangs schritt:
+Mit dem Anfangsschritt:
 \begin{align*}
 	\frac{u_j^1 - u_j^0}{d} &= 6u_j^0 \frac{u_{j+1}^0 - u_{j-1}^0}{2h} - \frac{u_{j+2}^0 - 2u_{j+1}^0 + 2u_{j-1}^0 - u_{j-2}^0}{2h^3}\\
 	\Rightarrow u_j^1 &=d\left(6u_j^0 \frac{u_{j+1}^0 - u_{j-1}^0}{2h} - \frac{u_{j+2}^0 - 2u_{j+1}^0 + 2u_{j-1}^0 - u_{j-2}^0}{2h^3}\right)+u_j^0
 \end{align*}
-k\"onnen wir $u^{[N]}(t,x)$ Numerisch berechnen.
-In Abildung \ref{fig:H10.22} haben wir für $N=1,2$ und $h=0.05, 0.1, 0.2, 0.4$ die analytische mit der numerischen L\"ossung verglichen.
+können wir $u^{[N]}(t,x)$ numerisch berechnen.
+In Abbildung \ref{fig:H10.22} haben wir für $N=1,2$ und $h=0.05, 0.1, 0.2, 0.4$ die analytische mit der numerischen Lösung verglichen.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.88\textwidth]{vergleichN1.png}
 	\includegraphics[width=0.88\textwidth]{vergleichN2.png}
-	\caption[Vergleich]{Hier sind numerische und analytische Lösung $u^{[1]}(1,x)$ (oben) und $u^{[2]}(1,x)$ (unten) verglichen.}
+	\caption[Vergleich]{Vergleich der numerischen und analytischen Lösung $u^{[1]}(1,x)$ (oben) und $u^{[2]}(1,x)$ (unten)}
 	\label{fig:H10.22}
 \end{figure}
-Man sieht das diese kurven recht gut konvergieren.
+Man sieht, dass diese Kurven recht gut konvergieren.
 Nur $h=0.4$ konvergiert f\"ur $N=2$ nicht.
 Um diese Konvergenz genauer zu untersuchen haben wir f\"ur alle
 $d\in[3\cdot10^{-5},2.5\cdot10^{-4}]$
 und alle $h\in[0.05,0.4]$
 die Gesamtabweichung des numerischen Verfahren f\"ur $u^{[1]}$ und $u^{[2]}$
-berechnent und in einer Heatmap geploted.
-Zusätzlich haben wir $d=\frac{1}{2.6}h^3$ geploted um zu zeigen dass das
-Verfahren f\"ur größere d nicht konvergiert.
-In abildung \ref{fig:H10.2} sieht mann ausserdem das $u^{[2]}$ eine 
-viel st\"arkere h Abh\"angigkeit hatt als $u^{[1]}$ wass man auch in Abildung \ref{fig:H10.22} gesehen hatt.
+berechnet und in eine Heatmap geplottet.
+Zusätzlich haben wir $d=\frac{1}{2.6}h^3$ geplottet, um zu zeigen, dass das
+Verfahren f\"ur größere $d$ nicht konvergiert.
+In Abbildung \ref{fig:H10.2} sieht man außerdem, dass $u^{[2]}$ eine 
+viel st\"arkere h-Abh\"angigkeit hat als $u^{[1]}$, was man auch in der Abbildung \ref{fig:H10.22} gesehen hat.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{heatMapN1}
 	\includegraphics[width=0.9\textwidth]{heatMapN2}
-	\caption[Vergleich]{Hier sind die Differenzen der numerischen und analytischen Lösung der DGL für $N=1$ (oben) und $N=2$ (unten) verglichen.}
+	\caption[Vergleich]{Vergleich der Differenzen der numerischen und analytischen Lösung der DGL für $N=1$ (oben) und $N=2$ (unten)}
 	\label{fig:H10.2}
 \end{figure}
 \subsection{}
 
-Nun haben wir $u^{[3]}(t, x)$ numerisch in den Intervallen $t \in[0,1]$ und $x\in[-5,45]$ berechnet und in Video \ref{vid:H10.3} dargestellt. 
-Man sieht 3 Solitonen die unterschiedliche Geschwindigkeiten und Amplituden haben.
-Diese befinden sich alle bei $t=0$ am ort $x=0$.
+Nun haben wir $u^{[3]}(t, x)$ numerisch in den Intervallen $t \in[0,1]$ und $x\in[-5,45]$ berechnet und im Video \ref{vid:H10.3} dargestellt. 
+Man sieht drei Solitonen, die unterschiedliche Geschwindigkeiten und Amplituden haben.
+Diese befinden sich alle bei $t=0$ am Ort $x=0$.
 
 \begin{figure}[htbp]
 	\centering
@@ -191,9 +191,9 @@ Diese befinden sich alle bei $t=0$ am ort $x=0$.
 \subsection{}
 Zuletzt betrachten wir Lösungen für $N\notin\mathbb{N}$.
 Wir haben die Lösungen für $N\in[1.0,1.9]$ betrachtet und in Video \ref{vid:H10.4} dargestellt.
-Mann sieht dass diese Anfangbedingungen keine perfekten Solitonen geben;
-Die resultierenden Kurven zerfliesen leicht und erzeugen hinter sich Wellen die auch positve Anteile haben.
-Trotzdem erkennt mann wie sich 2 immer besser Getrennte Wellen bilden.
+Man sieht, dass diese Anfangsbedingungen keine perfekten Solitonen ergeben;
+Die resultierenden Kurven zerfließen leicht und erzeugen hinter sich Wellen, die auch positive Anteile haben.
+Trotzdem erkennt man wie sich zwei immer besser getrennte Wellen bilden.
 
 \begin{figure}[htbp]
 	\centering
