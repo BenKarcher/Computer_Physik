@@ -80,4 +80,53 @@ Im Folgenden werden wir zeigen, dass die Relationen gelten:
 \begin{align}
 [\mathcal{F}(f \odot g)]_k=[\mathcal{F}f]_k[\mathcal{F}g]_{-k}=[\mathcal{F}f]_k\overline{[\mathcal{F}\overline{g}]_k}
 \end{align}
+%beweisen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Graphische Auswertung für große Amplituden}
+Sei jetzt ein Signal gegeben durch:
+\begin{align}
+s(t)=\left\{\begin{matrix}sin(2\pi \alpha t) & f"ur \ 0\leq t\leq t_{max}\\ 0 & sonst \end{matrix}\right\}
+\end{align}
+mit einer Konstanten $\alpha$ und einer maximalen Zeit $t_{max}$, die kleiner als die Länge des Gesamtimpulses $t_{max}<<\frac{l_{Gesamtimpuls}}{c}$ ist. Nun entsteht ein gestörtes, zeitversetztes Echo mit:
+\begin{align}
+	e(t)=s(t-t_L)+r(t)+b \sin(2\pi \beta t)
+\end{align}
+mit dem Störterm $r(t)$, der ein Rauschen mit einer Amplitude $a$ beschreibt und einem sinusförmigen Nebensignal mit einer Amplitude $b$ und einer Frequenz $\beta$. 
+Wir simulieren ein Rauschsignal mithilfe des Mersenne-Twisters, einem Pseudo-Zufallszahlen-Generator. Eine Funktion genrand\_res53() generiert Zufallszahlen zwischen $0$ und $1$, sodass die Verschiebung und Reskalierung geschreiben werden kann als: 
+\begin{align}
+	2 \cdot a \cdot (genrand\_res53()-0.5) \qquad \in [-a,a]
+\end{align}
+Im Folgenden stellen wir $|e(t)|^2$ graphisch für verschieden große Amplituden dar. Dabei wählen wir $a=b=0.5,1.0,2.0,4.0$ und die Frequenzen $\alpha=10$ und $\beta=1$ und für die Zeitverzögerung $t_L=50$. Dabei stellen wir fest, dass wir ab ... die Zeitverzögerung nicht mehr mit dem Auge ablesen können.
+% Graphen und Wert
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{analytische Korrelation von $e \odot s$}
+Des Weiteren bestimmen wir mithilfe der FFT-Routine analytisch die Korrelation $e \odot s$:
+\begin{align}
+(e \odot s)_k=\biggl[ \mathcal{F}^{-1}\biggl( [\mathcal{F}e]\overline{[\mathcal{F}\overline{s}]}\biggr)\biggr]_k=\biggl[\mathcal{F}^{-1}\biggl([\mathcal{F}e]\overline{[\mathcal{F}\overline{s}]}\biggr)\biggr]_k
+\end{align}
+Daraufhin stellen wir $|(e \odot s)(t)|^2$ für verschieden große Störungen graphisch dar. Dabei setzen wir $N=2^m$ mit $m=13$ und prüfen den Fall, ob man $t_L$ sicher bestimmen kann. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vergleich der analytischen und numerischen Korrelation von $e \odot s$}
+Jetzt betrachten wir die Amplituden $a=b=0$. Wir zeigen, dass die Korrelation 
+\begin{align}
+(e \odot s)(t):= \int_{-\infty}^{\infty}d\tau e(t+\tau)s(\tau)
+\end{align}
+gegeben ist durch:
+\begin{align}
+(e \odot s)(t) & = & 0, \qquad t<t_l-t_{max}\\
+(e \odot s)(t) & = & \frac{1}{2}\cos(2\pi \alpha (t-t_l))(t_{max}-t_l+t) \\
+&& -\frac{1}{4\pi \alpha} \cos(2\pi \alpha t_{max})\sin(2\pi \alpha (t_{max}-t_l+t)), \qquad t_L-t_{max}<t<t_L \\
+(e \odot s)(t) & = & \frac{1}{2} \cos(2\pi \alpha(t-t_L))(t_L-t+t_{max})\\
+&& -\frac{1}{4\pi \alpha}\cos(2\pi \alpha t_{max})\sin(2\pi \alpha (t_{max}+t_l-t)), \qquad t_L<t<t_l+t_{max}\\
+(e \odot s)(t) & = & 0, \qquad t>t_L+t_{max}\\ 
+\end{align}
+Anschließend vergleichen wir unser analytisches Ergebnis mit der zuvor oben numerisch bestimmten Lösung. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{"Zwitscher"-Impuls}
+Zu guter Letzt verbessern wir unser Verfahren mit einem Signal, einem sogenannten "Zwitscher"-Impuls
+\begin{align}
+s(t)=\left\{\begin{matrix}sin(2\pi \alpha(t) t) & f"ur \ 0\leq t\leq t_{max}\\ 0 & sonst \end{matrix}\right\}
+\end{align}
+mit einer linear variablen Frequenz $\alpha(t) = \alpha_0 + \alpha_1 t $.
+Zuletzt untersuchen wir noch unseren Störterm aus Teilaufgabe 3 mit dieser variablen Störfrequenz unter der Wahl von $\alpha_0=5.0$ und $\alpha_1=1.0$.
 \end{document}
