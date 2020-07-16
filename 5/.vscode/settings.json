@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "*.effect": "hlsl",
+        "*.tcc": "c",
+        "cmath": "c",
+        "functional": "c",
+        "random": "c",
+        "type_traits": "c",
+        "condition_variable": "c",
+        "sstream": "c",
+        "typeindex": "c",
+        "typeinfo": "c",
+        "chrono": "c",
+        "limits": "c",
+        "ranges": "c",
+        "valarray": "c"
+    }
+}

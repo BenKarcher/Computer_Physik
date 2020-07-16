@@ -1,0 +1,247 @@
+\documentclass[ngerman]{scrartcl} 
+
+\KOMAoptions{fontsize=12pt, paper=a4}
+\KOMAoptions{DIV=11}
+\usepackage[utf8]{inputenc}		% Direkte Eingabe von ä usw.
+\usepackage[T1]{fontenc}               	% Font Kodierung für die Ausgabe
+\usepackage{babel}			% Verschiedenste sprach-spezifische Extras
+\usepackage[autostyle=true]{csquotes}	% Intelligente Anführungszeichen
+\usepackage{amsmath}		% Mathematischer Formelsatz mit zusätzlichen mathematischen Schriften und Symbolen
+\usepackage{amssymb}		% Mathematischer Formelsatz mit zusätzlichen mathematischen Schriften und Symbolen
+\usepackage{physics}			% Differentialgleichungen
+\usepackage{listings}			% Zum Einbinden von Programmcode verwenden wir das listings-Paket
+\usepackage[dvipsnames]{xcolor}	% um Elemente von Befehlen farblich zu unterstützen
+\usepackage[varg]{txfonts}             	 % Schönere Schriftart
+\usepackage{graphicx}		% Paket um externe Graphiken einzufügen
+\RequirePackage[backend=biber, style=numeric]{biblatex} % Literaturverzeichnis
+\usepackage{hyperref} 		% um klickbare Elemente in Ihrem PDF-Ausgabedokument zu erzeugen
+\RequirePackage[all]{hypcap} 		% ergänzend zu hyperref
+\usepackage{siunitx}			% Intelligentes Setzten von Zahlen und Einheiten
+\usepackage{enumitem}		% Aufzählungsarten
+\usepackage{fancyhdr}
+\usepackage{float}			% Bild genau an der gewünschten Stelle [H] einfügen, 								% \begin{figure}[H]		\includegraphics[...]{{file name}}		\end{figure} 
+
+\setlength\parindent{0pt} 		% Sets paragraph indentation to 0
+
+\lstset{				% Deutsche Umlaute
+	basicstyle=\ttfamily,    
+	literate={~} {$\sim$}{1} 	% set tilde as a literal
+	{ö}{{\"o}}1
+	{ä}{{\"a}}1
+	{ü}{{\"u}}1
+	{ß}{{\ss}}1
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+}
+\lstset{
+	numbers=left, 				% Line numbering
+	numberstyle=\footnotesize, 			% Size of numbers
+	basicstyle=\ttfamily\small, 			% Style and Size of Text
+	backgroundcolor=\color{White}, 		% Background Color
+	language=Python, 				% Language of Code
+	commentstyle=\color{Maroon}, 			% Color and Style of Comments
+	stringstyle=\color{OliveGreen}, 			% Color of Strings
+	showstringspaces=false,
+	morekeywords={import,from,class,def,for,while,if,is,in,elif,else,not,and,or,print,break,continue,return,True,False,None,access,as,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert}, 												% Definition of new keywords that will be highlighted
+	keywordstyle=\color{RoyalBlue}			% Color and Style of Keywords
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ben Karcher, Annika Hoverath}
+\lhead{Computerphysik - Abgabe 3}
+\rfoot{Seite \thepage}
+
+
+\begin{document}
+
+
+\thispagestyle{fancy}
+
+\section{H.7: Eigenwerte linearer Differentialoperatoren}
+	Zunächst betrachten wir das folgende Randproblem:
+	\begin{align*}
+	u''(x) + g(x) u(x) &= 0\\
+	u(t_0) &= u_0\\
+	u(t_1) &= u_1
+	\end{align*}
+	Wenn wir nun die obige Gleichung mit Hilfe des linearen Differentialoperators $Du=u''+gu$ ausdrücken, lässt dich die DGL schreiben als: $Du=0$ (+ Randbedingungen) \\
+	Vor allem suchen wir Pare aus Eigenwerten $\lambda$ und Eigenfunktionen $u_\lambda$ die folgende Gleichung erfüllen:
+	\begin{align}
+		Du_\lambda=\lambda u_\lambda
+	\end{align}
+\subsection{Bedeutung der Eigenfunktion zu dem Operator D}
+In der ersten Teilaufgabe betrachten wir die Eigenfunktion genauer. Welche Bedeutung haben die Eigenfunktionen zu der Eigenwertgleichung D unter den Randbedingungen, wenn wir nun kein homogenes, sondern ein inhomogenes System 
+\begin{align}
+D u(x) = \lambda u(x) + f(x),  u (t_0) = a,  u(t_1) = b
+\end{align} betrachten? \newline
+Sei das Problem $D u_{\lambda} - \lambda u_{\lambda}$ mit der Bedingung $u(t_0) = 0 = u(t_1)$ gegeben. Daraus ergibt sich durch Einsetzen und Umformen 
+\begin{align}
+u''(x) + g(x) u(x) = 0 \Leftrightarrow u''(x) + (g(x)- \lambda) u(x) = 0
+\end{align}
+Nun drücken wir den Term anders aus:
+\begin{align}
+D u(x) = \lambda u(x) + f(x) \Leftrightarrow D u(x) - \lambda u(x) = f(x) \Leftrightarrow u''(x) + (g(x) - \lambda) u(x) = f(x)
+\end{align}
+Die Lösung des Systems setzt sich aus der Lösung des homogenen Teils $u_{hom}$ und der Lösung des inhomogenen, partikulären Teils $u_{inhom}$ zusammen.
+Für den homogenen Teil gilt die Randbedingung $u_{hom}(x_0) = 0 = u_{hom}(x_1)$. Durch diesen Ansatz können wir die beiden freien Parameter der inhomogenen Lösung so wählen, dass $u_{inhom}(x_0) = a$ und $u_{inhom}(x_1) = b$ sind. Durch diese Wahl erfüllt $u(x) = u_{hom}(x) + u_{inhom}(x)$ die DGL mit den Randbedingungen. Somit ist die gefundene Lösung die vollständige Lösung des Problems.
+Das bedeutet: Wenn man die Lösung der homogenen Randbedingung kennt, braucht man nur eine einzige spezielle Lösung, um alle speziellen Lösungen zu bekommen. \newline
+
+\subsection{Spektrum von D}
+Nun bestimmen wir numerisch die 10 betragsmäßig kleinsten Werte im Spektrum von D mit dem Numerov-Verfahren. Dieses Verfahren ist eine Methode, mit der man numerisch gewöhnliche Differentialgleichungen zweiter Ordnung, ohne einen Term in der ersten Ordnung, lösen kann. \newline
+Nun vergleichen wir unsere numerisch gefundene Lösung mit der analytischen Lösung der DGL mit homogenen Randbedingungen. \newline Sei $g(x) = 0$, so gilt: 
+\begin{align}
+D u(x) - \lambda u(x) = 0 \Leftrightarrow u''(x) - \lambda u(x) = 0 \Leftrightarrow u''(x) = \lambda u(x)
+\end{align}
+Wir behandeln das folgende Gleichungssystem
+\begin{align}
+u''(x) = \lambda u(x)
+\end{align}
+\begin{align}
+u(0) = 0
+\end{align}
+\begin{align}
+u(60) = 0
+\end{align}
+Dieses Gleichungssystem ist ein reguläres Sturm-Liouville-Problem. Dabei gibt es drei Fälle, die wir nun im Folgenden betrachten werden.
+\begin{itemize}
+	\item $\lambda > 0$
+\end{itemize}
+Wir wählen den Ansatz: $u(x) = e^{\alpha x}$. Setzen wir dies nun in Gleichung (5) ein, erhalten wir: 
+\begin{align}
+u''(x) = \alpha^2 u(x) \Leftrightarrow \alpha^2 = \lambda \rightarrow \alpha = \pm \sqrt{\lambda}
+\end{align}
+Damit haben wir die allgemeine Lösung gefunden: 
+\begin{align}
+u(x) = c_1 \cdot e^{\sqrt{\lambda} x} + c_2 \cdot e^{-\sqrt{\lambda} x}
+\end{align}
+Setzen wir nun die Randbedingungen ein, so erhalten wir: 
+\begin{align}
+u(0) = c_1 + c_2 \overset{!}{=} 0 \rightarrow c_2 = - c_1
+\end{align}
+\begin{equation}
+u(60) = c_1 \cdot sinh(60 \sqrt{\lambda}) \overset{!}{=} 0
+\end{equation}
+Diese Bedingung ist für kein $\lambda$ erfüllbar. Somit sind alle $\lambda > 0$ keine Eigenwerte. 
+\begin{itemize}
+	\item $\lambda = 0$
+\end{itemize}
+In diesem Fall führt die Gleichung (5) zu der Form:
+\begin{align}
+u''(x) = 0
+\end{align}
+Somit ergibt sich u(x) zu: $u(x) = c_1 x +c_2$ Nun folgen die Randbedingungen: 
+\begin{align}
+u(0) \overset{!}{=} 0 = c_2 \rightarrow c_2 = 0
+\end{align}
+\begin{align}
+u(60) = 60 \cdot c_1 \overset{!}{=} 0 \rightarrow c_1 = 0
+\end{align}
+Dies entspräche der trivialen Lösung. Somit ist $\lambda = 0$ ebenfalls kein Eigenwert.
+Zu guter Letzt betrachten wir den Fall
+\begin{itemize}
+	\item $\lambda < 0$	
+\end{itemize}
+Dieser Fall $u(x) = e^{\alpha x}$ verläuft analog zum ersten Fall $\lambda > 0$ mit der Änderung von:
+\begin{align}
+\lambda = - \alpha^2 \rightarrow \alpha = \pm i \sqrt{|\lambda|}
+\end{align}
+Somit lautet die allgemeine Lösung:
+\begin{align}
+u(x) = A \cdot cos^{\sqrt{|\lambda|} x} + B \cdot sin(\sqrt{|\lambda|} x)
+\end{align}
+Setzen wir nun die Randbedingungen ein, so erhalten wir: 
+\begin{align}
+u(0) = A \overset{!}{=} 0 \rightarrow A = 0
+\end{align}
+\begin{align}
+u(60) = B sin(60 \sqrt{|\lambda|}) \overset{!}{=} 0
+\end{align}
+Da $B \neq 0$ sein muss (sonst hätten wir wieder die triviale Lösung), ergeben sich die Eigenwerte $\lambda$: 
+\begin{align}
+\lambda = -(\frac{m \pi}{60})^2
+\end{align} mit $m \in \mathbb{N}$
+Somit sind alle Eigenwerte der DGL der homogenen Randbedingung negativ. \newline
+Aber warum funktioniert bei einer inhomogenen Lösung die homogene Lösung? Um dies zu verstehen betrachten wir nun die gleiche DGL, nun aber mit den inhomogenen Randbedingungen:
+\begin{align}
+D u(x) = \lambda u(x) \Leftrightarrow u''(x) =\lambda u(x)
+\end{align}
+\begin{align}
+u(0) = 1, u(60) = 0
+\end{align}
+Hierbei schauen wir uns jetzt nur die negativen Eigenwerte und die dazugehörigen Eigenfunktionen an. Numerisch haben wir bereits diese Eigenfunktion durch Iteration nach Numerov bestimmt. Dazu setzen wir u(0+h) = b (b ist ein beliebiger Parameter) und bestimmen mit Hilfe der 2. Randbedingung $u(60) = 0$ die Nullstelle mit dem Sekantenverfahren.\newline Analog zu Gleichung (19) erhalten wir:
+\begin{align}
+u(x) = A cos(\sqrt{|\lambda|}) + B sin(\sqrt{|\lambda|})
+\end{align}
+Setzen wir nun die Randbedingungen ein, liefert uns die obige Gleichung:
+\begin{align}
+u(0) = A \overset{!}{=} 1 \rightarrow A = 1
+\end{align}
+\begin{align}
+u(60) = cos(60 \sqrt{|\lambda|}) + B sin (60 \sqrt{|\lambda|}) \overset{!}{=}
+\end{align}
+Aus diesen Randbedingungen folgt:
+\begin{align}
+B = - \frac{cos(60 (\sqrt{|\lambda|}))}{sin(60 (\sqrt{|\lambda|}))}
+\end{align}
+Setzt man nun in diesen Koeffizienten die Eigenwerte der homogenen Randbedingung (Gleichung (22))  ein, so divergiert unser gefundener Koeffizient und damit auch die Maxima der Eigenfunktion zu genau deisem Eigenwert $u_{\lambda}(x)$.
+\newline
+Die Eigenwerte der DGL mit den homogenen Randbedingungen ergeben sich somit aus dem Maximum der maximalen Amplitude verschiedener Eigenfunktionen (mit verschiedenen Eigenwerten) mit den Eigenfunktionen der inhomogenen DGL. \newline
+Eigentlich sind genau an diesen Stellen keine Eigenwerte / Eigenfunktionen für den inhomogenen Fall vorhanden, weil diese Stellen Polstellen sind. Jedoch ist der Grenzwert an diesen Stellen das Maximum der maximalen Amplitude und somit ist an diesen Polstellen das Maximum der Amplitude maximal.\newline
+... Vergleich mit numerisch gefundenen Eigenwerten
+\newpage
+
+\section{H.8: Kronig-Penney-Modell}
+In dieser Aufgabe betrachten wir die quantenmechanischen Zustände der Valenzelektronen eines kristallinen Festkörpers. Diese Elektronenzustände werden hier durch die Schrödingergleichung beschrieben:
+\begin{align}
+i\hbar \frac{\partial}{\partial t} \psi(t,x) = -\frac{\hbar^2}{2m_e} \Delta \psi(t,x) + V(x) \psi(t,x)
+\end{align}
+Dabei ist V(x) das Potential, welches durch die Ionen im Kristallgitter erzeugt wird. 
+Da sich die (stationären) Zustände mit der Zeit nicht verändern, sieht die Wellengleichung für ein Elektron im Kristall mit der Aufenthaltswahrscheinlichkeit ${|\Phi(x)|}^2$ nun folgendermaßen aus:
+\begin{align}
+\psi(t,x) = e^{-iEt/\hbar}\Phi(x)
+\end{align}
+Im Folgenden nehmen wir an, dass das Kristallgitter mit der Länge L ein endlicher Potentialtopf sei. Das periodische Potential im Eindimensionalen lautet:
+\begin{align}
+V_{per} = 60 (cos(\pi x))^{16}
+\end{align}
+Da wir nun annehmen, dass die Elektronen aus diesem unendlich hohen Potential durch die Wände bei $x = 0$ und $x = L$ nicht entkommen können, muss die Aufenthaltswahrscheinlichkeit an den Stellen $x = 0$ und $x = L$ null sein. Die Elektronen können ja nicht einfach aus dem Kristall tunneln (Annahme).
+Durch diese Randbedingungen ergibt sich das Potential zu:
+\begin{align}
+V(x)=\left\{\begin{array}{lll} \infty & x \leq 0\\
+V_{per}(x) & 0 < x < L\\
+\infty & x \leq L \end{array}\right. 
+\end{align}
+\subsection{Energieeigenwerte}
+In dieser Teilaufgabe bestimmen wir nun mit Hilfe des Numerov-Verfahrens die Energieeigenwerte $\lambda$ für $L = 8$, wobei $0 \lesssim \lambda \lesssim max \{V_{per}(x)\}$ ist. Dazu bringen wir die homogene DGL in die folgende Form:
+\begin{align}
+s(x) = u''(x) + g(x) u(x), u(x_0) = u(x_1) = 0
+\end{align}
+Hier sieht nun unsere Funktion mit $V(x) = 60 cos(\pi x)^{16}$ folgendermaßen aus:
+\begin{align}
+u''(x) = \nabla \Phi(x)
+\end{align}
+\begin{align}
+g(x) = 2(\lambda - V(x))
+\end{align}
+Mit $s = 0$ und an den Rändern $u(0) = u(L) = 0$
+Nun setzen wir wieder $u(0 + h) = b$, variieren $\lambda$ ($0 < \lambda < max(V(x))$) und behalten alle Eigenwerte, bei denen $u(6) = 0$ gilt. Dies sind unsere Energiewerte. Den Parameter b bestimmen wir über die Normierung von $\int_{-\infty}^{\infty} |\Phi(x)|^2$. Um die Eigenwerte zu plotten, die die Bandlücke begrenzen, identifizieren wir diese Bandlücke, indem wir den Abstand zwischen zwei Energiewerten bestimmen. Hat dieser Abstand eine gewissen Breite, so definieren wir die begrenzenden Eigenwerte als Punkte der Bandlücke. 
+\newline
+Im eingebundenen Plot sieht man die Bandstruktur eines Kristalls. Dies äußert sich dadurch, dass es keine kontinuierlichen Übergänge gibt, sondern so eine Art von Gruppen. Es gibt Orte, an denen die Aufenthaltswahrscheinlichkeit für eine Elektron bei Null liegt. Dies bedeutet, dass sich das Elektron dort nicht aufhalten darf, da diese Zonen "verboten" sind.\newline
+... Beobachtung, Erklärung und Plot \newline 
+
+\subsection{Abhängigkeit der Bandstruktur von der Länge des Kristalls}
+Die Länge des Kristalls L ist im Vergleich zu einer realistischen Kristalllänge sehr viel kleiner. Deshalb überprüfen wir nun die Bandstruktur aus der vorherigen Aufgabe mit verschiedenen Längen L. Dabei setzen wir nun statt $L=8$ L auf diverse Längen (siehe Plot). Damit wir die Abhängigkeit der Bandstruktur von der Kristalllänge L untersuchen können, bestimmen wir die Anzahl der Energiewerte und die Breite der Bandstruktur. \newline
+Hierbei fällt uns auf, dass, je größer L ist, desto \newline ... \newline
+In einem realen Kristall gibt es im Energiebereich der Bandlücke weitere lokale Zustände, die durch Verunreinigungen, Gitterfehler und Oberflächenfehler zustande kommen. Diesen Effekt lassen wir hier jedoch außen vor, da er für jedes Kristall individuell ist. Er ist abhängig von der Beschaffenheit des jeweiligen Kristalls. 
+
+\subsection{Kristall im äußere konstanten elektrischen Feld}
+Zu guter Letzt simulieren wir den Kristall in einem homogenen elektrischen Feld $- \epsilon$ mit dem Potential $V_e(x) = x \epsilon$. Jetzt stellt sich die Frage: Was passiert? Verschiebt sich die Wellenfunktion in eine Richtung aufgrund der verschobenen Aufenthaltswahrscheinlichkeit der Elektronen wegen des elektrischen Feldes? Wie sieht die Bandlücke im Kristall aus? \newline
+Die Funktion des äußeren elektrischen Feldes ändert sich zu: $g(x) = 2 \cdot (\lambda - V(x) - x\epsilon)$. Ohne das elektrische Feld wirkt das Dielektrikum neutral nach außen. Die Ladungen heben sich gegenseitig auf. Da wir nun aber Ionen in einem elektrischen Feld betrachten, werden die positiv und die negativ geladenen Ionen im Kristallgitter aufgrund des äußeren Feldes gegeneinander verschoben bzw. sogar getrennt, sodass ein Dipol entsteht. Durch das äußere elektrische Feld verschiebt sich die Aufenthaltswahrscheinlichkeit ${|\Psi(t,x)|}$ des Elektrons um den Atomkern. Dadurch entsteht im Inneren des Atoms eine makroskopisch inhomogene Ladungsverteilung. Dieses Phänomen nennt man "Verschiebungspolarisation". In dem Plot sieht man, dass die Eigenwerte durch das äußere Feld größer werden und zudem die Bandlücken kleiner. Daraus können wir schlussfolgern, dass wenn das äußere Feld größer wird, wir mehr Energiewerte erhalten und die Bandlücken größer werden, je höher die Energie ist. (?)
+
+... Plot und Beschreibung der Bandlücken
+
+
+\end{document}

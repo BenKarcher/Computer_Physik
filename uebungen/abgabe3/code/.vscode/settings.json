@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.tcc": "c",
+        "chrono": "c",
+        "compare": "c",
+        "optional": "c",
+        "algorithm": "c",
+        "limits": "c",
+        "numeric": "c",
+        "ostream": "c",
+        "ranges": "c",
+        "streambuf": "c",
+        "system_error": "c",
+        "thread": "c",
+        "*.rh": "c"
+    }
+}

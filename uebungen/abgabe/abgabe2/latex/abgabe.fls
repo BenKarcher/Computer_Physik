@@ -1,0 +1,365 @@
+PWD /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.tex
+OUTPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.log
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+INPUT /usr/share/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/share/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/physics/physics.sty
+INPUT /usr/share/texmf-dist/tex/latex/physics/physics.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /dev/null
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/share/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT /usr/share/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/txfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/txfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.aux
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.aux
+OUTPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.aux
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omstxsy.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omstxsy.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omxtxex.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/omxtxex.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxexa.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxexa.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/t1txr.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/t1txr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+OUTPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+OUTPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.pdf
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-German.dict
+INPUT /usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-German.dict
+INPUT /usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txss.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txss.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/t1txss.fd
+INPUT /usr/share/texmf-dist/tex/latex/txfonts/t1txss.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xbss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xbss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xbss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/t1xr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/t1xbss.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxphvb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxbss.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/t1xr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/t1xbss.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxphvb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxbss.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/euler_fehler.png
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern_fehler.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/ruku_extern_fehler.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_x.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_x.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_x.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_leistung.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_leistung.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_leistung.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_scan.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_scan.png
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/fext_scan.png
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.aux
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/uebungen/abgabe/abgabe2/latex/abgabe.out
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

@@ -1,0 +1,62 @@
+\RequirePackage[utf8]{inputenc}               % Direkte Eingabe von ä usw.
+\RequirePackage[T1]{fontenc}                  % Font Kodierung für die Ausgabe
+\RequirePackage{babel}                        % Verschiedenste sprach-spezifische Extras
+\RequirePackage{fancyhdr}
+\RequirePackage{fancyheadings}
+\RequirePackage[autostyle=true]{csquotes}     % Intelligente Anführungszeichen
+\RequirePackage{amsmath}					  % Mathemodus
+\RequirePackage{amssymb}					  % Mathesymbole
+\RequirePackage{physics}					  %	\dv, \pdv, \abs
+\RequirePackage{xfrac}							% Schräge Brüche
+\RequirePackage{ dsfont }						%Sonderzeichen, zb IR mit \mathds{R}
+\RequirePackage{graphicx}					  % Grafiken
+\RequirePackage{listings}					  % Codeblöcke
+\RequirePackage{xcolor}						  % Syntax-Highlighting:
+\RequirePackage[backend=biber, style=numeric]{biblatex}
+%Literaturverzeichniss
+\RequirePackage[varg]{txfonts}                % Schönere Schriftart
+\RequirePackage{todonotes}            
+\RequirePackage{float}    
+
+
+\setlength{\parindent}{0em}
+\topmargin -1.0cm
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{6.0in}
+
+
+\newcommand{\Aufgabe}[1]{
+	{
+		\vspace*{0.5cm}
+		\textsf{\textbf{Aufgabe #1}}
+		\vspace*{0.2cm}
+		
+	}
+}
+
+% Die folgenden listings-Einstellungen sind nötig, um
+% deutsche Umlaute und die Tilde (~) in listings-Umgebungen
+% verwenden zu können.
+\lstset{
+	basicstyle=\ttfamily,    
+	literate={~} {$\sim$}{1} % set tilde as a literal
+	{ö}{{\"o}}1
+	{ä}{{\"a}}1
+	{ü}{{\"u}}1
+	{ß}{{\ss}}1
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+}
+
+% Farben für Code-Syntaxhighlighting und Weiteres festlegen:
+\lstset{
+	% Keine besondere Markierung für Leerzeichen in Codes
+	showspaces=false,               
+	showstringspaces=false,         
+	% Farebn für Code-Kommentare und Schlüsselworte:
+	commentstyle=\color{green},       % comment style
+	keywordstyle=\color{blue},      % keyword style
+}
