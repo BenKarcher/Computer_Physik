@@ -81,7 +81,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Ben Karcher, Anika Hoverath}
+\rhead{Ben Karcher, Annika Hoverath}
 \lhead{Computerphysik - Abgabe 6}
 \rfoot{Seite \thepage}
 
@@ -97,11 +97,11 @@
 	\renewcommand{\thesubsection}{H\arabic{section}.\arabic{subsection}}
 	
 \section{Schnelle \textsc{Fourier} Transformation (FFT) und Korrelationen}
-In diesem Blatt betrachten wir die Anwendung des FFT algorithmus
+In diesem Blatt betrachten wir die Anwendung des FFT Algorithmus
 um die Korrelation zweier Funktionen zu bestimmen.
-FFT is ein algorithmus mit dem die diskrete \textsc{Fourier} Transformation
-schnell ausgef\"urt werden kann. Die diskrete \textsc{Fourier} Transformation
-ist defeniert durch:
+FFT ist ein Algorithmus, mit dem die diskrete \textsc{Fourier} Transformation
+schnell ausgeführt werden kann. Die diskrete \textsc{Fourier} Transformation
+ist definiert durch:
 \begin{equation}
 	\label{equ:1.1}
 		[\mathcal{F} f]_{k}=\sum_{j=0}^{N-1} f_{j} \exp (2 \pi i ~\frac{kj}{N})
@@ -111,11 +111,11 @@ Die Korrelation
 	\label{equ:1.2}
 	(f \odot g)_{k}:=\sum_{j=0}^{N-1} f_{j+k} g_{j}
 \end{equation}
-zwei Funktionen misst wie sehr die Funktionieren
-nach einer Verschiebung um $k$ \"ubereinstimmen.
-Mittels der Korrelation k\"onnen
-auch aus verrauschten Echos die Laufzeiten ermitelt werden, 
-was sie f\"ur Radar- oder Sonarsignale sehr n\"utzlich macht.
+zwei Funktionen misst, wie sehr die Funktionen
+nach einer Verschiebung um $k$ übereinstimmen.
+Mittels der Korrelation können
+auch aus verrauschten Echos die Laufzeiten ermittelt werden, 
+was sie für Radar- oder Sonarsignale sehr nützlich macht.
 \subsection{}
 In diesem Aufgabenteil sollen die Gleichheiten:
 
@@ -148,21 +148,21 @@ $\overline{[\mathcal{F} \bar{g}]_{k}}=[\mathcal{F} g]_{-k}$
 Damit ist die Gleichung \ref{equ:1.3} bewiesen.
 \subsection{}
 \label{ssec:10.2}
-Zunächst betrachten wir als Signal einen Pulls
-von Frequenz $\alpha$ und L\"ange $t_{max}$ der form:
+Zunächst betrachten wir als Signal einen Puls
+von Frequenz $\alpha$ und L\"ange $t_{max}$ der Form:
 \begin{align}
-	s(t)=\left\{\begin{matrix}sin(2\pi \alpha t) & \text{f"ur} \ 0\leq t\leq t_{max}\\ 0 & \text{sonst} \end{matrix}\right\}
+	s(t)=\left\{\begin{matrix}sin(2\pi \alpha t) & \text{für} \ 0\leq t\leq t_{max}\\ 0 & \text{sonst} \end{matrix}\right\}
 \end{align}
-Wir nehmen an dass das empfangene Signal ein um  $t_L$
-verschobenes Echo des Signals ist mit zwei St\"orungen:
+Wir nehmen an, dass das empfangene Signal ein um  $t_L$
+verschobenes Echo des Signals mit zwei St\"orungen:
 \begin{align}
 	e(t)=s\left(t-t_{L}\right)+r(t)+b \sin (2 \pi \beta t)
 \end{align}
-Wobei $r(t)$ zuf\"allig zwichen $-a$ und $a$ oszilliert.
-Um die Zufallszahlen zu generieren haben wir die \verb|C++|-eigene
-\verb|random|-Funktion genutzt.
-Anschließend haben wir $|e(t)|^2$
-für die Amplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ geplottet (Abbildung \ref{fig:2.1}).
+ist, wobei $r(t)$ zuf\"allig zwischen $-a$ und $a$ oszilliert.
+Um die Zufallszahlen zu generieren, nutzen wir die \verb|C++|-eigene
+\verb|random|-Funktion.
+Anschließend plotten wir $|e(t)|^2$
+für die Amplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ (Abbildung \ref{fig:2.1}).
 
 \begin{figure}[htbp]
 	\centering
@@ -175,25 +175,25 @@ für die Amplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ geplottet (Abbildung \ref{fig:
 	\label{fig:2.1}
 \end{figure} 
 Es lässt sich erkennen, dass für die Amplituden
-$a=b=0.5, 1.0$ die Zeit $t_L$ noch sehr gut mit dem Auge abzulesen ist.
+$a=b=0.5, 1.0$ die Zeit $t_L$ noch sehr gut mit dem Auge ablesbar ist.
 Für $a=b=2$ ist es schon schwer die erste Amplitude des Echo-Signals
 und damit $t_L$ genau zu identifizieren.
-Für $a=b=4$ ist das Signal zwar noch erkenbar aber nur noch auf $\pm3$ einzuschr\"anken.
+Für $a=b=4$ ist das Signal zwar noch erkennbar, aber nur noch auf $\pm3$ einzuschr\"anken.
 Für $a=b=8$ ist es quasi nicht mehr möglich das Signal zu erkennen und damit auch nicht möglich $t_L$ abzulesen. 
 
 \subsection{}
 
-In dieser Teilaufgabe soll mit hilfe der Korrelation $(e \odot s)_k$
+In dieser Teilaufgabe soll mit Hilfe der Korrelation $(e \odot s)_k$
 die Genauigkeit der Bestimmung von $t_L$ verbessert werden.
-Datzu stellen wir Gleichung \ref{equ:1.3} nach $(f \odot s)_k$ um:
+Dazu stellen wir Gleichung \ref{equ:1.3} nach $(f \odot s)_k$ um:
 \begin{equation*}
 	(e \odot s)_{k}=\left[\mathcal{F}^{-1}\left( [\mathcal{F} e] \overline{[\mathcal{F} s]}\right)\right]_{k}
 \end{equation*}
-Diese berechnung sieht im Programm folgendermassen aus:
+Diese Berechnung sieht im Programm folgendermaßen aus:
 \begin{lstlisting}[style=CStyle]
 	(s.fft() *= e.fft().conj()).rfft()
 \end{lstlisting}
-Wobei .fft() und .rfft() die FFT und r\"ucktransformationen sind.
+Wobei .fft() und .rfft() die FFT und Rücktransformationen sind.
 Nun haben wir die normierte Korrelation $|(e \odot s)(t)|^{2}$ für die gleichen Störungsamplituden wie in Aufgabe \ref{ssec:10.2} berechnet ($a=b=0.5,1.0 2.0, 4.0, 8.0$) und dargestellt (Abbildung \ref{fig:3.1}).
 \begin{figure}[htbp]
 	\centering
@@ -202,18 +202,18 @@ Nun haben wir die normierte Korrelation $|(e \odot s)(t)|^{2}$ für die gleichen
 	\includegraphics[width=0.98\textwidth]{plots/korrelation/2.0}
 	\includegraphics[width=0.98\textwidth]{plots/korrelation/4.0}
 	\includegraphics[width=0.98\textwidth]{plots/korrelation/8.0}
-	\caption[$|(e \odot s)(t)|^2$]{Hier ist die Korrelation $|(e \odot s)(t)|^2$ für die Amplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ dargestellt.}
+	\caption[$|(e \odot s)(t)|^2$]{Hier ist die Korrelation $|(e \odot s)(t)|^2$ für die Amplituden \\ $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ dargestellt.}
 	\label{fig:3.1}
 \end{figure} 
-Mit diesem Verfahren ist es wesentlich einfacher ist $t_L$ zu bestimmen,
+Mit diesem Verfahren ist es wesentlich einfacher $t_L$ zu bestimmen,
 da man nur das Maximum der Funktion bestimmen muss.
 Dies funktioniert für die Störungsamplituden $a=b=0.5,1,2,4$ sehr gut.
-Auserdem ist das verfahren genauer da der peak zu einer spitze l\"auft
+Außerdem ist das Verfahren genauer, da der Peak zu einer Spitze l\"auft,
 die genauer geortet werden kann.
-Selbst bei $a=b=8$ ist ein peak noch klar erkenbar. 
+Selbst bei $a=b=8$ ist ein Peak noch klar erkennbar. 
 \newpage
 \subsection{}
-Nun betrachten wir die analytische L\"ossung der Korrelation:
+Nun betrachten wir die analytische L\"osung der Korrelation:
 \begin{equation*}
 	(e \odot s)(t):=\int_{-\infty}^{\infty} \mathrm{d} \tau~ e(t+\tau) s(\tau)
 \end{equation*}
@@ -228,7 +228,7 @@ Hierbei betrachten wir den st\"orungsfreien Fall $a=b=0$
 	0 & \text { sonst }
 	\end{array}\right.
 \end{align*}
-Da  $s(\tau)=0~\forall\tau\notin[0,t_{max}]$ l\"ast sich das Integral umschreiben zu:
+Da  $s(\tau)=0~\forall\tau\notin[0,t_{max}]$ gilt, l\"asst sich das Integral umschreiben zu:
 \begin{align*}
 	(e \odot s)(t):&=\int_{0}^{t_{max}} \mathrm{d} \tau~ e(t+\tau) \sin(2\pi\alpha\tau)\\
 	&=\int_{t}^{t+t_{max}} \mathrm{d} \tau~ e(\tau) \sin(2\pi\alpha(\tau-t))\\
@@ -248,7 +248,7 @@ Nun betrachten wir 4 F\"alle:
 		(e ~\odot~ s)(t)&=\int_{t_L}^{t+t_{max}} \mathrm{d} \tau~ \sin(2\pi\alpha(\tau-t_L)) \sin(2\pi\alpha(\tau-t))
 	\end{align*}
 	Mit dem Additionstheorem: $\sin \alpha \sin \beta = \frac{1}{2} \left[ \cos(\alpha-\beta) - \cos (\alpha+\beta) \right]$
-	kann integral umgeschrieben werden zu:
+	kann das Integral umgeschrieben werden zu:
 	\begin{align*}
 		(e ~\odot~ s)(t)&=\frac{1}{2}\int_{t_L}^{t+t_{max}} \mathrm{d} \tau~ \cos(2\pi\alpha(t-t_L))-\cos(2\pi\alpha(2\tau-t_L-t))\\
 		&=\left[\frac{\tau\cos(2\pi\alpha(t-t_L))}{2}-\frac{\sin(2\pi\alpha(2\tau-t_L-t))}{8\pi\alpha}\right]_{\tau=t_L}^{t+t_{max}}\\
@@ -265,7 +265,7 @@ Nun betrachten wir 4 F\"alle:
 		(e ~\odot~ s)(t)&=\int_{t}^{t_L+t_{max}} \mathrm{d} \tau~ \sin(2\pi\alpha(\tau-t_L)) \sin(2\pi\alpha(\tau-t))
 	\end{align*}
 	Mit dem Additionstheorem: $\sin \alpha \sin \beta = \frac{1}{2} \left[ \cos(\alpha-\beta) - \cos (\alpha+\beta) \right]$
-	kann integral umgeschrieben werden zu:
+	kann das Integral umgeschrieben werden zu:
 	\begin{align*}
 		(e ~\odot~ s)(t)&=\frac{1}{2}\int_{t}^{t_L+t_{max}} \mathrm{d} \tau~ \cos(2\pi\alpha(t-t_L))-\cos(2\pi\alpha(2\tau-t_L-t))\\
 		&=\left[\frac{\tau\cos(2\pi\alpha(t-t_L))}{2}-\frac{\sin(2\pi\alpha(2\tau-t_L-t))}{8\pi\alpha}\right]_{\tau=t}^{t_L+t_{max}}\\
@@ -281,7 +281,7 @@ Nun betrachten wir 4 F\"alle:
 		\Rightarrow(e \odot s)(t)=0
 	\end{equation*}
 \end{itemize}
-Somit haben wir die analytische L\"ossung bestimmt:
+Somit haben wir die analytische L\"osung bestimmt:
 \begin{align*}
 	&(e ~\odot~ s)(t)=\\
 	&\left\{\begin{array}{ll}
@@ -293,20 +293,20 @@ Somit haben wir die analytische L\"ossung bestimmt:
 	0 & \text { für } t>t_L+t_{max}
 	\end{array}\right.
 \end{align*}
-Diese vergelichen wir in Abilldung \ref{fig:4.1} mit der numerischen L\"ossung.
+Diese Lösung vergleichen wir in Abbildung \ref{fig:4.1} mit der numerischen L\"osung.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.98\textwidth]{plots/analytisch/analytisch.png}
 	\includegraphics[width=0.98\textwidth]{plots/analytisch/numerisch.png}
-	\caption[Vergleich]{Hier haben wir die analytische mit der numerischen Lösung der Korrelation ohne Störung ($a=b=0$) verglichen.}
+	\caption[Vergleich]{Hier vergleichen wir die analytische mit der numerischen Lösung der Korrelation ohne Störung ($a=b=0$).}
 	\label{fig:4.1}
 \end{figure} 
-Man sieht das bis auf einen konstanten Vorfaktor diese Funktionen sehr \"ahnlich sind.
-Die numerische Funktion dient also zur bestimmung von $t_L$.
+Man sieht, dass bis auf einen konstanten Vorfaktor diese Funktionen sehr \"ahnlich sind.
+Die numerische Funktion dient also zur Bestimmung von $t_L$.
 \subsection{}
-Nun versuchen wir die genauigkeit des Verfahrens zu verbessern.
-Datzu nutzen wir einen \emph{Zwitscher}-Puls, welcher eine bessere Autokorrelation aufweist.
-Dieser Puls nutzt eine varierende Frequenz um die genaue Verschiebung sch\"arfer zu bestimmen.
+Nun versuchen wir die Genauigkeit des Verfahrens zu verbessern.
+Dazu nutzen wir einen \emph{Zwitscher}-Puls, welcher eine bessere Autokorrelation aufweist.
+Dieser Puls nutzt eine variierende Frequenz, um die genaue Verschiebung sch\"arfer zu bestimmen.
 Das Signal wird dann beschrieben durch:
 \begin{equation*}
 s(t)=\left\{\begin{array}{ll}
@@ -315,7 +315,7 @@ s(t)=\left\{\begin{array}{ll}
 \end{array}\right.
 \end{equation*}
 In diesem Fall verwenden wir eine lineare Frequenz $\alpha(t)=\alpha_0+t\alpha_1$.
-Die resultierenden Korrelationen f\"ur $\alpha_0=5,~\alpha_1=1$ sind in Abilldung \ref{fig:5.1} aufgetragen.
+Die resultierenden Korrelationen f\"ur $\alpha_0=5,~\alpha_1=1$ sind in Abbildung \ref{fig:5.1} aufgetragen.
 
 \begin{figure}[htbp]
  	\centering
@@ -324,10 +324,10 @@ Die resultierenden Korrelationen f\"ur $\alpha_0=5,~\alpha_1=1$ sind in Abilldun
  	\includegraphics[width=0.98\textwidth]{plots/zwitscher/2.0}
  	\includegraphics[width=0.98\textwidth]{plots/zwitscher/4.0}
  	\includegraphics[width=0.98\textwidth]{plots/zwitscher/8.0}
-	\caption[$|(e \odot s)(t)|^2$]{Hier ist die Korrelation $|(e \odot s)(t)|^2$ für ein Zwitscher-Signal für die Störamplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ dargestellt.}
+	\caption[$|(e \odot s)(t)|^2$]{Hier ist die Korrelation $|(e \odot s)(t)|^2$ für einen Zwitscher-Signal für die Störamplituden $a=b=0.5, 1.0, 2.0, 4.0, 8.0$ dargestellt.}
 	\label{fig:5.1}
 \end{figure} 
 Das \emph{Zwitscher}-Signal hat die Korrelation sch\"arfer gemacht,
-ist aber empfindlicher gegen\"uber grossen St\"orrungen.
+ist aber empfindlicher gegen\"uber großen St\"orungen.
 \end{document}
 
