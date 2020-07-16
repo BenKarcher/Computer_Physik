@@ -1,10 +1,8 @@
+//Ben Karcher, Anika Hoverath
+//gcc main.cpp -lstdc++ -lm -o main -Wall -Wextra -Wformat -g -O3
+//./main
+//gnuplot main.gnu
 #include "fft.hpp"
-#include <fstream>
-#include <iomanip>
-#include <iostream>
-#include <sstream>
-#include <stdio.h>
-#include <string>
 
 using namespace std;
 
@@ -14,17 +12,17 @@ double alpha0 = 10, alpha1 = 0;
 double beta = 1;
 double a = 0, b = 0;
 
-complex<double> signal(double t)
+complex<double> signal(double t)//the signal alpha1=0 for constant alpha
 {
     return (0 <= t && t <= tmax) ? sin(2 * M_PI * (alpha0 + t * alpha1) * t) : 0;
 }
 
-complex<double> echo(double t)
+complex<double> echo(double t)//the echo
 {
     return signal(t - tL) + (2.0 * a * random() / RAND_MAX) - a + b * sin(2 * beta * t);
 }
 
-complex<double> korrelation(double t)
+complex<double> korrelation(double t)//analytical solution to korelation
 {
     if (t < tL - tmax) {
         return 0;
@@ -39,17 +37,19 @@ complex<double> korrelation(double t)
 
 int main()
 {
+    //instantiate discrete function objects
     discrete_function s(signal, 13, tint);
     discrete_function e(echo, 13, tint);
     discrete_function k(korrelation, 13, tint);
+    //filepath for plotting
     char filename[50];
 
     //aufgabe 2
-    system("mkdir -p ./plots/echo");
-    for (a=b=0.5; a<=8; a=b*=2)
+    system("mkdir -p ./plots/echo");//makes a directory
+    for (a=b=0.5; a<=8; a=b*=2)//varries a and b from 0.5-8
     {
-        sprintf(filename,"./plots/echo/%.1lf.plot",a);
-        e.reset().norm().plot(filename);
+        sprintf(filename,"./plots/echo/%.1lf.plot",a);//writes file path
+        e.reset().norm().plot(filename);//computes the norm of the corelation and plots it
     }
 
     //aufgabe 3

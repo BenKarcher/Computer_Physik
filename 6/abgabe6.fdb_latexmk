@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber abgabe6"] 1594897880 "abgabe6.bcf" "abgabe6.bbl" "abgabe6" 1594898051
-  "abgabe6.bcf" 1594898051 98964 a6955072c9991ae370c11e6baf5fa2c5 "pdflatex"
+["biber abgabe6"] 1594899990 "abgabe6.bcf" "abgabe6.bbl" "abgabe6" 1594899997
+  "abgabe6.bcf" 1594899997 98964 a6955072c9991ae370c11e6baf5fa2c5 "pdflatex"
   (generated)
   "abgabe6.bbl"
   "abgabe6.blg"
-["pdflatex"] 1594898048 "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.tex" "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.pdf" "abgabe6" 1594898051
+["pdflatex"] 1594899994 "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.tex" "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.pdf" "abgabe6" 1594899997
   "/dev/null" 1594637038 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.aux" 1594898051 3023 6019f0c434978d7af17d2c5e2a2c52f3 ""
-  "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.tex" 1594898047 15486 53f6402752ed5ad8688f6e26ffff8800 ""
+  "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.aux" 1594899997 3023 6019f0c434978d7af17d2c5e2a2c52f3 ""
+  "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.tex" 1594899986 15487 b323297c447413e57bfb36fb04c9dfc6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1572595918 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1572595918 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -191,11 +191,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1588971555 336533 ca30c568cd61f603b80c7ac374a5b7b3 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588971551 8044938 a09e0a870679db4813beaa4e03f9c92e ""
-  "abgabe6.aux" 1594898051 3023 6019f0c434978d7af17d2c5e2a2c52f3 "pdflatex"
-  "abgabe6.bbl" 1594897881 0 d41d8cd98f00b204e9800998ecf8427e "biber abgabe6"
-  "abgabe6.out" 1594898049 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "abgabe6.run.xml" 1594898051 2275 629d5a7cd042876b523259ebdf2d3d84 "pdflatex"
-  "abgabe6.tex" 1594898047 15486 53f6402752ed5ad8688f6e26ffff8800 ""
+  "abgabe6.aux" 1594899997 3023 6019f0c434978d7af17d2c5e2a2c52f3 "pdflatex"
+  "abgabe6.bbl" 1594899991 0 d41d8cd98f00b204e9800998ecf8427e "biber abgabe6"
+  "abgabe6.out" 1594899995 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "abgabe6.run.xml" 1594899997 2275 629d5a7cd042876b523259ebdf2d3d84 "pdflatex"
+  "abgabe6.tex" 1594899986 15487 b323297c447413e57bfb36fb04c9dfc6 ""
   "plots/analytisch/analytisch.png" 1594896953 21138 7ac2d435fa0736f261f8bbbf95dada95 ""
   "plots/analytisch/numerisch.png" 1594896953 23645 fd195a3f3b67277ee7fd214c3de91af6 ""
   "plots/echo/0.5.png" 1594896952 40086 de1ea83d149834e7d41d5d930cad7a5d ""
@@ -214,11 +214,11 @@
   "plots/zwitscher/4.0.png" 1594896953 27004 002495c90a8d28a1e1bfd75db14eb03a ""
   "plots/zwitscher/8.0.png" 1594896953 43309 0ba16d37d8ead8d48924cc51ac3a60f8 ""
   (generated)
-  "abgabe6.bcf"
-  "abgabe6.aux"
   "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.pdf"
-  "abgabe6.pdf"
-  "abgabe6.log"
-  "abgabe6.run.xml"
   "abgabe6.out"
   "/home/ben/Documents/vorlesungen 2020/Computer_physik/Computer_Physik/6/abgabe6.log"
+  "abgabe6.bcf"
+  "abgabe6.run.xml"
+  "abgabe6.log"
+  "abgabe6.pdf"
+  "abgabe6.aux"

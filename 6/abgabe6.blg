@@ -1,5 +1,5 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
 [0] Config.pm:307> INFO - Logfile is 'abgabe6.blg'
-[27] biber:315> INFO - === Thu Jul 16, 2020, 13:11:20
-[41] Biber.pm:375> INFO - Reading 'abgabe6.bcf'
-[102] Utils.pm:300> WARN - No data sources defined!
+[29] biber:315> INFO - === Thu Jul 16, 2020, 13:46:31
+[43] Biber.pm:375> INFO - Reading 'abgabe6.bcf'
+[105] Utils.pm:300> WARN - No data sources defined!
