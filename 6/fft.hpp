@@ -1,13 +1,8 @@
 #include <fstream>
-#include <iomanip>
-#include <iostream>
-#include <sstream>
-#include <stdio.h>
-#include <vector>
 #include <cassert>
 #include <complex>
-#include <limits.h>
-#include <string>
+
+// fft implementation based in part on code from:
 // https://stackoverflow.com/questions/8801158/fft-in-a-single-c-file
 
 class discrete_function
@@ -19,7 +14,7 @@ private:
     std::complex<double> *vec;
     std::complex<double> (*func)(double);
 
-    int reverse(int n) //calculating revers number
+    int reverse(int n) //calculating reverse number
     {
         uint j, p = 0;
         for (j = 1; j <= logSize; j++)
@@ -39,7 +34,7 @@ private:
             vec[j] = f2[j];
     }
 
-    void transformPrivate(int sign) //
+    void transformPrivate(int sign)//transforms the array +1:fft -1:rfft
     {
         ordina(); // first: reverse order
         std::complex<double> *W;
@@ -94,6 +89,7 @@ public:
         return *this;
     }
 
+    //overloads the *= operator to multiply functions
     discrete_function &operator*=(discrete_function &input)
     {
         assert(size == input.getSize());
@@ -104,6 +100,7 @@ public:
         return *this;
     }
 
+    //overloads the *= operator to scale functions
     discrete_function &operator*=(std::complex<double> a)
     {
         for (uint i = 0; i < size; i++)
@@ -117,7 +114,7 @@ public:
     {
         transformPrivate(-1);
         for (uint i = 0; i < size; i++)
-            vec[i] *= d;// / size; // multiplying by step/N
+            vec[i] *= d;
         return *this;
     }
 
@@ -125,7 +122,7 @@ public:
     {
         transformPrivate(1);
         for (uint i = 0; i < size; i++)
-            vec[i] *= d; // multiplying by step
+            vec[i] *= d;
         return *this;
     }
 
